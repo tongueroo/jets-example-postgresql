@@ -16,6 +16,12 @@ The info route shows database info.
 
 ## Deploy
 
-Configure a `.env` file to use the actually DATABASE_URL. EXAMPLE:
+Configure a `.env` file to use the actually DATABASE_URL. Example:
 
     DATABASE_URL=postgresql://USERNAME:PASSWORD@DNS-HOSTNAME.us-west-2.rds.amazonaws.com/DBNAME?pool=5
+
+You can use `.env`, `.env.remote`, `.env.development.remote`, etc per [Env Files](http://rubyonjets.com/docs/env-files/)
+
+Then you will be ready to deploy:
+
+    jets deploy
