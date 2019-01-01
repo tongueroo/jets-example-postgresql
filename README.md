@@ -1,11 +1,21 @@
-# Jets Project
+# Jets Example Project with Postgresql Database Adapter
 
-This README would normally document whatever steps are necessary to get the application up and running.
+This project was generated with:
 
-Things you might want to cover:
+    jets new demo --database postgresql
+    cd demo
+    jets generate scaffold Post title:string
 
-* Dependencies
-* Configuration
-* Database setup
-* How to run the test suite
-* Deployment instructions
+Then the demo controller was added and connected to the `/info` route.
+
+* [config/routes.rb](config/routes.rb)
+* [app/controllers/demo_controller.rb](app/controllers/demo_controller.rb)
+* [views/demos/index.html.erb](views/demos/index.html.erb)
+
+The info route shows database info.
+
+## Deploy
+
+Configure a `.env` file to use the actually DATABASE_URL. EXAMPLE:
+
+    DATABASE_URL=postgresql://USERNAME:PASSWORD@DNS-HOSTNAME.us-west-2.rds.amazonaws.com/DBNAME?pool=5
