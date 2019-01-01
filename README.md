@@ -25,3 +25,7 @@ You can use `.env`, `.env.remote`, `.env.development.remote`, etc per [Env Files
 Then you will be ready to deploy:
 
     jets deploy
+
+If you visit the `/info` path, you'll should see something like this:
+
+![](https://raw.githubusercontent.com/tongueroo/jets-example-postgresql/master/screenshots/api-gateway-postgresql-info.png)
