@@ -10,7 +10,7 @@ Then the demo controller was added and connected to the `/info` route.
 
 * [config/routes.rb](config/routes.rb)
 * [app/controllers/demo_controller.rb](app/controllers/demo_controller.rb)
-* [views/demos/index.html.erb](views/demos/index.html.erb)
+* [app/views/demos/index.html.erb](app/views/demos/index.html.erb)
 
 The info route shows database info.
 
